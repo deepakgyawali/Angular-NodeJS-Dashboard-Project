@@ -1,0 +1,31 @@
+<form>
+Start: <input #start
+      (keyup.enter)="updateStartDate(start.value)"
+      (blur)="updateStartDate(start.value)"
+      value={{startDate}}>
+&nbsp;&nbsp;
+End: <input #end
+      (keyup.enter)="updateEndDate($event.target.value)"
+      (blur)="updateEndDate(end.value)"
+      value={{endDate}}>
+&nbsp;&nbsp;
+Frequency:
+	<select [ngModel]="frequency" name="frequency" (change)="updateFrequency($event.target.value)">
+		<option >yearly</option>
+		<option >quarterly</option>
+		<option >daily</option>
+		<option >minutes</option>
+	</select>
+&nbsp;&nbsp;
+Swapped:
+    <input type="radio" name="swap" value="false" [(ngModel)]="swapped" (change)="updateSwapped('false')"> no
+    <input type="radio" name="swap" value="true" [(ngModel)]="swapped" (change)="updateSwapped('true')"> yes
+&nbsp;&nbsp;
+<button (mousedown)="addReferenceYearOffset(-1)">&#8681; year </button>
+<button (mousedown)="addReferenceYearOffset(1)">&#8679; year </button>
+<button (mousedown)="refresh()">Refresh</button>
+</form>
+
+<br/>
+<br/>
+<div id={{chartId}} [style.width.%]="100" [style.height.px]="500"></div>

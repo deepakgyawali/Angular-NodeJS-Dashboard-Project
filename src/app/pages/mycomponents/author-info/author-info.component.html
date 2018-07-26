@@ -1,0 +1,18 @@
+<div class=row>
+<div class="col-md-12">
+  <h3>STRATEGY {{strategyCode}} </h3>
+  <div class="panel-body" style="padding: 10px">
+    	<dl class="dl-horizontal">	
+	        <dd><b>Authors: </b> {{author}}<span *ngIf=coAuthor>, {{coAuthor}}</span>
+	        </dd>	
+	        <dd><b>Heading:</b> {{description}}</dd>	
+	        <dd><b>Reference:</b> 
+		        <a *ngIf=url href={{url}} target="_blank">{{reference}} ({{pubDate}})</a>
+		        <span *ngIf=!url>{{reference}} ({{pubDate}})</span>
+	        </dd>      
+			<dd><b>Duration:</b> {{startDate}} to {{endDate}}</dd>
+			<dd><b>Description:</b> {{summary}}</dd>        
+	    </dl>	    	
+  </div>
+</div>
+</div>

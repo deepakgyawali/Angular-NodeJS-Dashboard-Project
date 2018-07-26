@@ -1,0 +1,10 @@
+<chart type="StockChart" [options]="options"></chart>
+ <input type="text" [(ngModel)]="year" /> 
+<!-- <div class="" style="margin-left: 0cm; margin-right: 0cm;">
+	History range (in years): &nbsp;&nbsp;&nbsp; <input id="5" value="5"
+		type="checkbox" name="group1" [(ngModel)]="year">&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;
+	<input id="10" value="10" type="checkbox" name="group2" [(ngModel)]="year">&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;
+	<input id="15" value="15" type="checkbox" name="group3" [(ngModel)]="year">&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;
+	<input id="20" value="20" type="checkbox" name="group4" [(ngModel)]="year">&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;&nbsp;
+</div> -->
+<input type="button" (click)="loadData()" value="Load Chart">

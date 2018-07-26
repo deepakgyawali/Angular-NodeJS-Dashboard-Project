@@ -1,0 +1,90 @@
+  #chartdiv, #chartdiv2, #chartdiv3, #chartdiv4{
+    max-width	: 100%;
+    height	: 250px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 8px;
+    margin-bottom: 13px;
+  }
+  #mapdiv {
+    height: 500px;
+  }
+  .title {
+    font-weight: 300;
+    margin-bottom: 13px;
+  }
+  .email-form textarea {
+    height: 250px;
+  }
+  .email-row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .glyphicon { 
+    margin-right:10px; 
+    color: #fff;
+  }
+  .panel-body { 
+    padding:0px; 
+  }
+  .panel-body table tr td {
+    padding-left: 15px 
+  }
+  .panel-body .table {
+    margin-bottom: 0px; 
+  }
+  #accordion a{
+    color: #fff;
+  }
+  #accordion h4.panel-title {
+    font-weight: bold;
+  }
+  #accordion .panel-body table tbody tr td{
+    text-align: left;
+  }
+  .badge {
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #4787C7;
+    font-size: 8px;
+  }
+  .label-info, .label-success {
+    padding: 2px;
+  }
+  .buysblock {
+    background: rgb(38,168,226);
+  }
+  .commentsblock {
+    background: rgb(39,183,121);
+  }
+  .users{
+    background: #F06449;
+  }
+  .servers {
+    background: #235789;
+  }
+  .block {
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 17px;
+  }
+  .block h1, block h2, block .icon {
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+  .block h1{
+    font-size: 7em;
+    text-align: center;
+    font-weight: 100;
+  }
+  .block .icon {
+    font-size: 2em;
+  }
+  .block h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    text-align: center;
+  }
